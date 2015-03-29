@@ -1,0 +1,70 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "13e9f15e647de5031be120c6336880ca",
+    "packages": [
+        {
+            "name": "njasm/soundcloud",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/njasm/soundcloud.git",
+                "reference": "b69887f21917bda7aad16bfae8a0a662b00bf56c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/njasm/soundcloud/zipball/b69887f21917bda7aad16bfae8a0a662b00bf56c",
+                "reference": "b69887f21917bda7aad16bfae8a0a662b00bf56c",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.4.*@dev",
+                "satooshi/php-coveralls": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Njasm\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nelson João Morais",
+                    "email": "njmorais@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Soundcloud API Wrapper written in PHP with OAuth 2.0 support",
+            "homepage": "http://github.com/njasm/soundcloud",
+            "keywords": [
+                "api",
+                "soundcloud",
+                "webservice",
+                "webservices"
+            ],
+            "time": "2015-03-19 20:14:56"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "njasm/soundcloud": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

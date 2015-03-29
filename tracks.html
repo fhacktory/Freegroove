@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+    <title>Freegroove, play song with tag</title>
+</head>
+<body>
+<script src="//connect.soundcloud.com/sdk.js"></script>
+<script>
+
+   var Song = window.location.search.replace("?", "");
+   var idSong = Song.split("/");
+   console.log();
+
+   SC.initialize({
+       client_id: "0ba8355e86a5a5a9efe93433a55ccb8e",
+       redirect_uri: "http://192.168.33.10/freegroove/auth.php"
+   });
+
+   SC.stream("/tracks/"+idSong[4], function(sound){
+       sound.play();
+   });
+</script>
+</body>
+
+
+</html>
+
+

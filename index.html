@@ -1,0 +1,29 @@
+<!doctype html>
+ <html>
+    <head>
+        <title>Freegroove, play song with tag</title>
+    </head>
+    <body>
+    <script src="//connect.soundcloud.com/sdk.js"></script>
+        <script>
+
+            SC.initialize({
+                client_id: "0ba8355e86a5a5a9efe93433a55ccb8e",
+                redirect_uri: "http://192.168.33.10/freegroove/auth.php"
+            });
+
+            SC.connect(function() {
+                SC.put('/me', {
+                    user: {description: 'I am using the SoundCloud API!'}
+                });
+            });
+             SC.get('/tracks', { q: 'blue'}, function(tracks) {
+                console.log(tracks);
+            });
+                        </script>
+    </body>
+
+
+</html>
+
+
