@@ -86,7 +86,9 @@ cam = Camera()
 
 
 NomFichier = "initfile.txt"
-Fichier = open(NomFichier,'w')
+pathname = os.path.dirname(__file__)
+filename = os.path.join(pathname, 'camera') 
+Fichier = open(filename+"/"+NomFichier,'w')
 Fichier.close()
 
 
@@ -101,7 +103,7 @@ while 1:
   else :
     peak = max(peaks,key=itemgetter(1))[0]
     itemColor = options[CouleurDominante(peak)]()
-    os.rename(NomFichier, itemColor+".txt")
+    os.rename(filename+"/"+NomFichier, filename+"/"+itemColor+".txt")
     NomFichier = itemColor+".txt"
     print ""
 
